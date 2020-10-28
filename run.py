@@ -1,3 +1,6 @@
+'''
+copyright https://www.kaggle.com/hmendonca/mnist-pytorch-lightning-gpu-demo
+'''
 from pytorch_lightning import Trainer
 from task import CoolSystem
 

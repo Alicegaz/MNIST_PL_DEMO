@@ -4,17 +4,6 @@ import torch
 from torch.nn import functional as F
 from torch.utils.data import DataLoader
 
-########################################
-# hacky way to ovecome proxy problems
-#######################################
-
-from six.moves import urllib
-
-proxy = urllib.request.ProxyHandler({'http': 'http://proxy.stc:3128', 'https': 'http://proxy.stc:3128'})
-opener = urllib.request.build_opener(proxy)
-urllib.request.install_opener(opener)
-#######################################
-
 from torchvision.datasets import MNIST
 from torchvision import transforms
 
